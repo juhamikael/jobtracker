@@ -35,6 +35,7 @@ import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { BsFillCalendarDateFill } from "react-icons/bs";
+import { AiFillQuestionCircle } from "react-icons/ai";
 import { Calendar } from "../ui/calendar";
 
 interface ShowFormProps {
@@ -94,7 +95,7 @@ const ShowForm: FC<ShowFormProps> = ({ user, updateTable, setUpdateTable }) => {
     <>
       <Dialog>
         <DialogTrigger className="py-2 px-6 bg-primary rounded-2xl text-muted">
-          Add new
+          Create new record
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
