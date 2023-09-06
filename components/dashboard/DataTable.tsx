@@ -65,25 +65,15 @@ const DataTable: FC<TDataTableProps> = ({
     id: number
   ) => {
     if (tempData) {
-      axios
-        .put("/api/jobs/", {
-          [fieldName]: event.target.checked,
-          id: id,
-          target: fieldName,
-        })
-        .then((response) => {
-          if (response.status === 200) {
-            setTempData({
-              ...tempData,
-              [fieldName]: event.target.checked,
-            });
-          } else {
-            console.error("Error updating the checkbox value:", response.data);
-          }
-        })
-        .catch((error) => {
-          console.error("Error updating the checkbox value:", error);
-        });
+      setTempData({
+        ...tempData,
+        [fieldName]: event.target.checked,
+      });
+      axios.put("/api/jobs/", {
+        [fieldName]: event.target.checked,
+        id: id,
+        target: fieldName,
+      });
     }
   };
 
