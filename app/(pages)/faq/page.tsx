@@ -1,4 +1,4 @@
-import AccordionComponent from "@/components/home/AccordionComponent";
+import AccordionComponent from "@/components/faq/AccordionComponent";
 
 const FAQ = () => {
   return (
