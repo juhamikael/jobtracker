@@ -24,6 +24,13 @@ const AccordionComponent = () => {
               "You can edit the Applied status of a job, change the data if mistakes were made when creating the record or delete the job if you don't want to see it anymore."
             }
           </p>
+          <Link
+            className="hover:text-blue-300 font-bold"
+            href="/dashboard"
+            target="_self"
+          >
+            Navigate to the dashboard
+          </Link>
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
