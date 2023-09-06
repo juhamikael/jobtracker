@@ -1,35 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Job Tracker
+Simple full stack application to keep track of the jobs you found interesting by adding the base metadata such as:
+- Company name
+- Job Title
+- Published at
+- Ends At
+- Applied status
+- Href for job posting
 
-## Getting Started
+--- 
+## About the project
 
-First, run the development server:
+Originally I wanted to build this for my own needs so I could keep all interesting open positions in one place instead of bookmarks.
+However, this ended up being a somewhat functional web app with Authentication and personal tables. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+All Tracked job posts are private and only seen by you.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Built with 
+- **Frontend**
+  - Next.js
+  - Tailwind CSS
+    - shadcn/ui
+- **Backend**
+  - Drizzle ORM
+  - Supabase (PostgreSQL)
+  - Kinde Auth
+- **Language**
+  - Typescript
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
+## Preview images
+### Landing Page
+![image](https://github.com/juhamikael/jobtracker/assets/83360104/b3a0213a-b595-40b0-9354-5e77807b27f9)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Sign In page
+![image](https://github.com/juhamikael/jobtracker/assets/83360104/1c07a3df-2589-4c86-827d-4904191bc216)
 
-## Learn More
+### Add new Record
+![image](https://github.com/juhamikael/jobtracker/assets/83360104/8bc13226-ae8d-4745-a3d7-1bfb4c77f4cc)
 
-To learn more about Next.js, take a look at the following resources:
+### Dashboard
+![image](https://github.com/juhamikael/jobtracker/assets/83360104/d278ee7a-9d16-4930-a374-7fd519c8f2d8)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# jobtracker
