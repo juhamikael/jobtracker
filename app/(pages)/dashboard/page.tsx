@@ -1,5 +1,4 @@
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-
 import DataPage from "@/components/dashboard/DataPage";
 
 const DashBoard = () => {
@@ -7,11 +6,7 @@ const DashBoard = () => {
 
   return (
     <div className="mt-10">
-      {isAuthenticated() ? (
-        <DataPage userId={getUser().id!} />
-      ) : (
-        <div> Please Login </div>
-      )}
+      {isAuthenticated() ? <DataPage userId={getUser().id!} /> : <></>}
     </div>
   );
 };
