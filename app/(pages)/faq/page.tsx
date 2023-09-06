@@ -5,7 +5,7 @@ const FAQ = () => {
     <div className="flex flex-col">
       <div className="lg:mt-20">
         <div className=" flex flex-col gap-x-4">
-          <div className="text-6xl font-black mb-10">
+          <div className="text-6xl font-black mb-10 text-primary">
             <h1>Job Tracker</h1>
           </div>
 
