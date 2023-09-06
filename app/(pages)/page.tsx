@@ -2,6 +2,7 @@ import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Button } from "@/components/ui/button";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import AccordionComponent from "@/components/faq/AccordionComponent";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   const { isAuthenticated } = getKindeServerSession();
@@ -26,6 +27,7 @@ export default function Home() {
           </div>
         </div>
       )}
+      {isAuthenticated() && redirect("/dashboard")}
     </div>
   );
 }
