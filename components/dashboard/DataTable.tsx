@@ -139,14 +139,14 @@ const DataTable: FC<TDataTableProps> = ({
                 <>
                   <TableCell>
                     <Input
-                      className={cn("px-0 mx-0")}
+                      className={cn("px-4 mx-0")}
                       value={tempData?.title || ""}
                       onChange={(e) => handleInputChange(e, "title", row.id)}
                     />
                   </TableCell>
                   <TableCell>
                     <Input
-                      className={cn("px-0 mx-0")}
+                      className={cn("mx-0 px-4")}
                       value={tempData?.company || ""}
                       onChange={(e) => handleInputChange(e, "company", row.id)}
                     />
@@ -159,7 +159,7 @@ const DataTable: FC<TDataTableProps> = ({
                   </TableCell>
                   <TableCell>
                     <Input
-                      className={cn("px-0 mx-0")}
+                      className={cn("px-4 mx-0 lg:w-52")}
                       value={tempData?.href || ""}
                       onChange={(e) => handleInputChange(e, "href", row.id)}
                     />
@@ -203,7 +203,7 @@ const DataTable: FC<TDataTableProps> = ({
                       View job post
                     </Link>
                   </TableCell>
-                  <TableCell className="flex place-content-center items-center">
+                  <TableCell className="flex place-content-center my-2 ">
                     {row.applyStatus ? (
                       <BsCheckCircle className="text-green-500 h-6 w-6" />
                     ) : (
