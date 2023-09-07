@@ -67,13 +67,48 @@ const AccordionComponent = () => {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
+        <AccordionTrigger>Privacy</AccordionTrigger>
+        <AccordionContent>
+          <p className="mb-2">
+            This site collect your email, name and profile picture from Google /
+            GitHub and are stored in the database of the app. They are used to
+            identify you so you can use the app.
+          </p>
+
+          <p className="mb-2">
+            I don't spam you with emails or sell your data to third parties.
+            However, {"I'm"} not responsible for the data breaches of the third
+            parties.
+          </p>
+          <p className="flex flex-col gap-y-3">
+            <Link
+              target="_blank"
+              className="hover:text-blue-300 font-bold"
+              href="/privacy-policy"
+            >
+              <AiOutlineLink className="inline-block mr-2" />
+              Read more from Privacy Policy (link)
+            </Link>
+            <Link
+              target="_blank"
+              className="hover:text-blue-300 font-bold"
+              href="/terms"
+            >
+              <AiOutlineLink className="inline-block mr-2" />
+              Read more from Term of Service (link)
+            </Link>
+          </p>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-4">
         <AccordionTrigger>Contact</AccordionTrigger>
         <AccordionContent>
           <p className="mb-2">
             Since this is mainly for a personal purpose and for portfolio.
           </p>
           <p className="mb-2">
-            So if you want to get your data removed or have any questions
+            So if you want to get your data removed, have questions, feedback or
+            anything
           </p>
 
           <Link
