@@ -30,15 +30,15 @@ All Tracked job posts are private and only seen by you.
 ---
 ## Preview images
 ### Landing Page
-![image](https://github.com/juhamikael/jobtracker/assets/83360104/b3a0213a-b595-40b0-9354-5e77807b27f9)
+![Screenshot 2023-09-07 003102](https://github.com/juhamikael/jobtracker/assets/83360104/10131266-3df0-4671-bf4a-e15e677572b3)
 
 ### Sign In page
-![image](https://github.com/juhamikael/jobtracker/assets/83360104/1c07a3df-2589-4c86-827d-4904191bc216)
+![Screenshot 2023-09-07 004124](https://github.com/juhamikael/jobtracker/assets/83360104/2fcec84b-a4db-47ef-97ac-a0a710978d06)
 
 ### Add new Record
-![image](https://github.com/juhamikael/jobtracker/assets/83360104/8bc13226-ae8d-4745-a3d7-1bfb4c77f4cc)
+![Screenshot 2023-09-07 004317](https://github.com/juhamikael/jobtracker/assets/83360104/958d7bde-7397-4c08-995c-5ab48e52866a)
 
 ### Dashboard
-![image](https://github.com/juhamikael/jobtracker/assets/83360104/d278ee7a-9d16-4930-a374-7fd519c8f2d8)
+![Screenshot 2023-09-07 004307](https://github.com/juhamikael/jobtracker/assets/83360104/04d78a07-1d58-4c5e-ab2c-b28919a2f5f4)
 
 
