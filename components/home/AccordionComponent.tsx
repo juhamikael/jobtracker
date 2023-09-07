@@ -76,14 +76,16 @@ const AccordionComponent = () => {
           <p className="mb-2">
             This site collects your email, name, and profile picture from Google
             and GitHub solely for identification purposes, enabling you to use
-            the app. We don't request or store user passwords; authentication is
-            managed via a code sent to your email or through GitHub.
+            the app. We {"don't"} request or store user passwords;
+            authentication is managed via a code sent to your email or through
+            GitHub.
           </p>
 
           <p className="mb-2">
-            Your trust is valued. While we don't spam or sell your data, it's
-            important to note that third-party services used for database and
-            authentication may have their own security measures. We can't
+            Your trust is valued. While we {"don't"} spam or sell your data,
+            {"it's"} important to note that third-party services used for
+            database and authentication may have their own security measures. We{" "}
+            {"can't"}
             guarantee their absolute security.
           </p>
 

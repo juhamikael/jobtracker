@@ -48,11 +48,11 @@ const PrivacyPolicy = () => {
 
       <p>
         The Job Tracker site gathers user emails, names, and profile pictures
-        from Google and GitHub. These details are stored in the app's database
-        and are used exclusively for identification, enabling users to access
-        and utilize the services. Importantly, Juha Mikael does not request or
-        store user passwords. Authentication is securely managed via codes sent
-        to users' emails or through GitHub.
+        from Google and GitHub. These details are stored in the {"app's"}{" "}
+        database and are used exclusively for identification, enabling users to
+        access and utilize the services. Importantly, Juha Mikael does not
+        request or store user passwords. Authentication is securely managed via
+        codes sent to {"users'"} emails or through GitHub.
       </p>
 
       <h2>Log Data</h2>
@@ -62,9 +62,10 @@ const PrivacyPolicy = () => {
         <span className="font-bold"> Vercel</span>, might collect certain
         information that your browser sends to the server, commonly referred to
         as Log Data. This Log Data may encompass details like your{" "}
-        {"computer's"} Internet Protocol ("IP") address, browser version, the
-        specific pages of our Service that you visit, the time and date of your
-        visit, the duration spent on those pages, and other related statistics.
+        {"computer's"} Internet Protocol {'("IP")'} address, browser version,
+        the specific pages of our Service that you visit, the time and date of
+        your visit, the duration spent on those pages, and other related
+        statistics.
       </p>
 
       <h2>Cookies</h2>
@@ -76,7 +77,8 @@ const PrivacyPolicy = () => {
       </p>
 
       <p>
-        The website may use "cookies" to enhance user experience. However, we
+        The website may use {'"cookies"'} to enhance user experience. However,
+        we
         {" don't"} knowingly collect or store any cookies. Cookies are small
         files that may be sent to and stored on your device when you access
         certain online content. You can set your browser to notify you before
