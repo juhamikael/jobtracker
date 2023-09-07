@@ -1,5 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
+import { AiFillGithub } from "react-icons/ai";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 const Footer = () => {
@@ -7,6 +8,25 @@ const Footer = () => {
 
   return (
     <footer className="mt-auto">
+      <div className="fixed bottom-0 right-0 py-4 px-4">
+        <div className="flex gap-x-4">
+          <Link
+            className="flex gap-x-2 hover:font-bold transition-all"
+            href="https://github.com/juhamikael/jobtracker"
+            target="_blank"
+          >
+            <AiFillGithub className="h-6 w-6" />
+            Source code
+          </Link>
+          <Link
+            className="flex gap-x-2 hover:font-bold transition-all"
+            href="https://dev.juhamikael.info/contact"
+            target="_blank"
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
       <div className="flex justify-center gap-x-4 py-4">
         <Link
           className={cn(
