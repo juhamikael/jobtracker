@@ -2,8 +2,7 @@ import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import { jobs, users } from "./schema";
 import { eq } from "drizzle-orm";
-
-const dbUrl = process.env.DATABASE_URL || "";
+const dbUrl = process.env.DATABASE_URL!;
 
 const client = postgres(dbUrl);
 const db = drizzle(client);

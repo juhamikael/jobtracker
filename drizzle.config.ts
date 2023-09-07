@@ -1,11 +1,11 @@
 import type { Config } from "drizzle-kit";
+import "dotenv/config";
 
 export default {
   schema: "./db/schema.ts",
   out: "./db/migrations",
   dbCredentials: {
-    connectionString:
-      "postgresql://postgres:PvEUju7RFypxR6qo@db.hwzhuedbjfpyctluszsh.supabase.co:5432/postgres",
+    connectionString: process.env.DATABASE_URL!,
   },
   breakpoints: true,
   driver: "pg",
