@@ -137,7 +137,6 @@ const DataTable: FC<TDataTableProps> = ({
             <TableRow key={row.id}>
               {editingRowId === row.id ? (
                 <>
-                  <TableCell>{row.id}</TableCell>
                   <TableCell>
                     <Input
                       className={cn("px-0 mx-0")}
