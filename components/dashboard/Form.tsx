@@ -42,6 +42,7 @@ interface ShowFormProps {
   user: any;
   updateTable: boolean;
   setUpdateTable: React.Dispatch<React.SetStateAction<boolean>>;
+  tableDataEmpty?: boolean;
 }
 
 const formSchema = z.object({
@@ -60,7 +61,12 @@ const formSchema = z.object({
   href: z.string().url("Must be a valid URL"),
 });
 
-const ShowForm: FC<ShowFormProps> = ({ user, updateTable, setUpdateTable }) => {
+const ShowForm: FC<ShowFormProps> = ({
+  user,
+  updateTable,
+  setUpdateTable,
+  tableDataEmpty,
+}) => {
   const [publishDate, setPublishDate] = useState<DateRange | undefined>({
     from: new Date(2022, 0, 20),
     to: addDays(new Date(2022, 0, 20), 20),
@@ -91,6 +97,7 @@ const ShowForm: FC<ShowFormProps> = ({ user, updateTable, setUpdateTable }) => {
     setUpdateTable(!updateTable);
     form.reset();
   }
+  console.log(tableDataEmpty);
   return (
     <>
       <Dialog>
@@ -99,9 +106,18 @@ const ShowForm: FC<ShowFormProps> = ({ user, updateTable, setUpdateTable }) => {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle className="my-4 text-2xl font-bold">
+            <DialogTitle className="py-2 text-2xl font-bold">
               Add new record
             </DialogTitle>
+            {tableDataEmpty && (
+              <DialogDescription className="pb-4">
+                If {"you're"} new user and you {"don't"} have any records saved
+                yet, you most likely need to reload the page after adding new
+                record. {"It's "}
+                addressed bug {"I'm"} gonna work on later.
+              </DialogDescription>
+            )}
+
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}

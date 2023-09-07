@@ -74,6 +74,7 @@ const DataPage: FC<TDataPageProps> = ({ userId }) => {
             {tableData.length === 0 ? (
               <div className="flex justify-center">
                 <ShowForm
+                  tableDataEmpty={tableData.length === 0}
                   user={user}
                   updateTable={updateTable}
                   setUpdateTable={setSetUpdateTable}
