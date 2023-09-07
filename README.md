@@ -39,6 +39,11 @@ All Tracked job posts are private and only seen by you.
 ![Screenshot 2023-09-07 004317](https://github.com/juhamikael/jobtracker/assets/83360104/958d7bde-7397-4c08-995c-5ab48e52866a)
 
 ### Dashboard
-![Screenshot 2023-09-07 004307](https://github.com/juhamikael/jobtracker/assets/83360104/04d78a07-1d58-4c5e-ab2c-b28919a2f5f4)
+![image](https://github.com/juhamikael/jobtracker/assets/83360104/05edc94c-7976-471e-a004-ea9a923dbdef)
+
+### FAQ
+![image](https://github.com/juhamikael/jobtracker/assets/83360104/347889cb-6643-4be4-bc92-984f3352f65f)
+
+
 
 
