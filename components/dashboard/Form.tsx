@@ -97,7 +97,6 @@ const ShowForm: FC<ShowFormProps> = ({
     setUpdateTable(!updateTable);
     form.reset();
   }
-  console.log(tableDataEmpty);
   return (
     <>
       <Dialog>
