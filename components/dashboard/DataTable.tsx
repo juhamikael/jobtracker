@@ -196,7 +196,11 @@ const DataTable: FC<TDataTableProps> = ({
                     {format(new Date(row.endsAt), "PPP")}
                   </TableCell>
                   <TableCell className="font-bold">
-                    <Link target="_blank" href={row.href}>
+                    <Link
+                      className="hover:text-primary transition-all py-4"
+                      target="_blank"
+                      href={row.href}
+                    >
                       View job post
                     </Link>
                   </TableCell>
@@ -208,10 +212,20 @@ const DataTable: FC<TDataTableProps> = ({
                     )}
                   </TableCell>
                   <TableCell>
-                    <button onClick={() => startEditing(row)}>Edit</button>
+                    <button
+                      className="py-3 hover:text-primary transition-all"
+                      onClick={() => startEditing(row)}
+                    >
+                      Edit
+                    </button>
                   </TableCell>
                   <TableCell>
-                    <button onClick={() => deleteRow(row.id)}>Delete</button>
+                    <button
+                      className="py-3 hover:text-primary transition-all"
+                      onClick={() => deleteRow(row.id)}
+                    >
+                      Delete
+                    </button>
                   </TableCell>
                 </>
               )}
