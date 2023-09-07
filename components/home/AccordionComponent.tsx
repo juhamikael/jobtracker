@@ -76,7 +76,7 @@ const AccordionComponent = () => {
           </p>
 
           <p className="mb-2">
-            I don't spam you with emails or sell your data to third parties.
+            I {"don't"} spam you with emails or sell your data to third parties.
             However, {"I'm"} not responsible for the data breaches of the third
             parties.
           </p>
