@@ -16,13 +16,16 @@ const AccordionComponent = () => {
         <AccordionTrigger>What is this app and why?</AccordionTrigger>
         <AccordionContent>
           <p>
-            Simply to keep track of the jobs you found interesting by adding the
-            base metadata of it and want to keep everything in one place.
+            This app serves as a centralized hub for users to track job
+            opportunities they find interesting, consolidating essential
+            metadata in one place.
           </p>
           <p className="my-4">
-            {
-              "You can edit the Applied status of a job, change the data if mistakes were made when creating the record or delete the job if you don't want to see it anymore."
-            }
+            Users can edit the data of any job posting {"'bookmark'"},
+            especially if errors were made during the initial addition. This
+            includes updating the
+            {"'Applied'"} status and making other necessary corrections. Jobs
+            can also be removed if they are no longer relevant.
           </p>
           <Link
             className="hover:text-blue-300 font-bold"
@@ -33,6 +36,7 @@ const AccordionComponent = () => {
           </Link>
         </AccordionContent>
       </AccordionItem>
+
       <AccordionItem value="item-2">
         <AccordionTrigger>Built with</AccordionTrigger>
         <AccordionContent>
@@ -70,16 +74,19 @@ const AccordionComponent = () => {
         <AccordionTrigger>Privacy</AccordionTrigger>
         <AccordionContent>
           <p className="mb-2">
-            This site collect your email, name and profile picture from Google /
-            GitHub and are stored in the database of the app. They are used to
-            identify you so you can use the app.
+            This site collects your email, name, and profile picture from Google
+            and GitHub solely for identification purposes, enabling you to use
+            the app. We don't request or store user passwords; authentication is
+            managed via a code sent to your email or through GitHub.
           </p>
 
           <p className="mb-2">
-            I {"don't"} spam you with emails or sell your data to third parties.
-            However, {"I'm"} not responsible for the data breaches of the third
-            parties.
+            Your trust is valued. While we don't spam or sell your data, it's
+            important to note that third-party services used for database and
+            authentication may have their own security measures. We can't
+            guarantee their absolute security.
           </p>
+
           <p className="flex flex-col gap-y-3">
             <Link
               target="_blank"
@@ -87,7 +94,7 @@ const AccordionComponent = () => {
               href="/privacy-policy"
             >
               <AiOutlineLink className="inline-block mr-2" />
-              Read more from Privacy Policy (link)
+              View complete Privacy Policy
             </Link>
             <Link
               target="_blank"
@@ -95,7 +102,7 @@ const AccordionComponent = () => {
               href="/terms"
             >
               <AiOutlineLink className="inline-block mr-2" />
-              Read more from Term of Service (link)
+              View Terms of Service
             </Link>
           </p>
         </AccordionContent>
@@ -104,24 +111,23 @@ const AccordionComponent = () => {
         <AccordionTrigger>Contact</AccordionTrigger>
         <AccordionContent>
           <p className="mb-2">
-            Since this is mainly for a personal purpose and for portfolio.
+            This platform is primarily designed for personal use and as a
+            showcase for my portfolio.
           </p>
           <p className="mb-2">
-            So if you want to get your data removed, have questions, feedback or
-            anything
+            If you wish to have your data removed, have any questions, feedback,
+            or other concerns:
           </p>
-
           <Link
             target="_blank"
             className="hover:text-blue-300 font-bold"
             href="https://dev.juhamikael.info/contact"
           >
             <AiOutlineLink className="inline-block mr-2" />
-            Contact me through the contact form on my personal website (link)
+            Please contact me through the form on my personal website.
           </Link>
-
           <p className="mt-2 italic">
-            (Use the same email you used to register to this app.)
+            (Ensure you use the same email you registered with on this app.)
           </p>
         </AccordionContent>
       </AccordionItem>
