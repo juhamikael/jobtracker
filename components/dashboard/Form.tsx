@@ -110,9 +110,9 @@ const ShowForm: FC<ShowFormProps> = ({
             </DialogTitle>
             {tableDataEmpty && (
               <DialogDescription className="pb-4">
-                If {"you're"} new user and you {"don't"} have any records saved
-                yet, you most likely need to reload the page after adding new
-                record. {"It's "}
+                If {"you're"} new user {"and / or"} you {"don't"} have any
+                records saved yet, you most likely need to reload the page after
+                adding new record. {"It's "}
                 addressed bug {"I'm"} gonna work on later.
               </DialogDescription>
             )}
