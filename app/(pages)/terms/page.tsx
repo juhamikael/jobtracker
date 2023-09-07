@@ -1,6 +1,12 @@
 import { prose } from "@/app/styles/prose";
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Job Tracker | Terms of Use",
+  description:
+    "Simple full stack application to keep track of the jobs you found interesting in simple dashboard, kind of like bookmarks.",
+};
 const Terms = () => {
   return (
     <div className={cn("w-1/3 prose", prose)}>
@@ -123,11 +129,9 @@ const Terms = () => {
         services provided by other parties. These websites may contain
         information or material that some people may find inappropriate or
         offensive. This Terms of Service was created by{" "}
-        <p>
-          <a href="https://www.termsusetemplate.com">
-            Terms Use Template Generator
-          </a>
-        </p>
+        <a href="https://www.termsusetemplate.com">
+          Terms Use Template Generator
+        </a>
       </p>
 
       <p>

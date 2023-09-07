@@ -1,5 +1,12 @@
 import { cn } from "@/lib/utils";
 import { prose } from "@/app/styles/prose";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Job Tracker | Privacy Policy",
+  description:
+    "Simple full stack application to keep track of the jobs you found interesting in simple dashboard, kind of like bookmarks.",
+};
 
 const PrivacyPolicy = () => {
   return (

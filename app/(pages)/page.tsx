@@ -1,8 +1,16 @@
 import { RegisterLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/server";
 import { Button } from "@/components/ui/button";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-import AccordionComponent from "@/components/faq/AccordionComponent";
+import AccordionComponent from "@/components/home/AccordionComponent";
 import { redirect } from "next/navigation";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Job Tracker",
+  description:
+    "Simple full stack application to keep track of the jobs you found interesting in simple dashboard, kind of like bookmarks.",
+};
 
 export default function Home() {
   const { isAuthenticated } = getKindeServerSession();
