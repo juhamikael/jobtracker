@@ -1,17 +1,15 @@
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate } from "drizzle-orm/postgres-js/migrator";
 import postgres from "postgres";
-const connectionString =
-    "postgresql://postgres:Q4EWWH7Yw93dEpV8582vpAeKKG5YQqTSQsJNii8MTkeuD3Lwsy@db.hwzhuedbjfpyctluszsh.supabase.co:5432/postgres";
-
-
-
+import { config } from 'dotenv';
+config({ path: '.env.local' });
 
 const runMigrate = async () => {
-    // if (!process.env.DATABASE_URL) {
+    const connectionString = process.env.DATABASE_URL!;
 
-    //     throw new Error("DATABASE_URL is not defined");
-    // }
+    if (!connectionString) {
+        throw new Error("DATABASE_URL is not defined");
+    }
     const sql = postgres(connectionString, { max: 1 });
     const db = drizzle(sql);
 
