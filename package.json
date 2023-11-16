@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "migrations:generate": "drizzle-kit generate:postgres",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "tsx db/migrate.ts",
     "migrations:push": "drizzle-kit push:postgres",
     "migrations:drop": "drizzle-kit --config=drizzle.config.ts"
   },
@@ -56,6 +57,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
-    "drizzle-kit": "^0.19.13"
+    "drizzle-kit": "^0.19.13",
+    "tsx": "^3.14.0"
   }
 }
