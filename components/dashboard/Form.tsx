@@ -68,8 +68,8 @@ const ShowForm: FC<ShowFormProps> = ({
   tableDataEmpty,
 }) => {
   const [publishDate, setPublishDate] = useState<DateRange | undefined>({
-    from: new Date(2022, 0, 20),
-    to: addDays(new Date(2022, 0, 20), 20),
+    from: new Date(),
+    to: addDays(new Date(), 30),
   });
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema as any),

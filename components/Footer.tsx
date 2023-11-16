@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className="mt-auto">
-      <div className="fixed bottom-0 right-0 py-4 px-4">
+      <div className="flex justify-center md:fixed md:bottom-0 md:right-0 md:py-4 md:zpx-4">
         <div className="flex gap-x-4">
           <Link
             className="flex gap-x-2 hover:font-bold transition-all"

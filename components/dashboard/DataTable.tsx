@@ -120,11 +120,11 @@ const DataTable: FC<TDataTableProps> = ({
     <Table className={cn("w-screen")}>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-96">Title</TableHead>
-          <TableHead className="w-96 text-left">Company</TableHead>
-          <TableHead className="text-left w-48">Published At</TableHead>
-          <TableHead className="text-left w-48">Ends At</TableHead>
-          <TableHead className="w-36">Link</TableHead>
+          <TableHead className="">Title</TableHead>
+          <TableHead className=" text-left">Company</TableHead>
+          <TableHead className="text-left">Published At</TableHead>
+          <TableHead className="text-left ">Ends At</TableHead>
+          <TableHead className="">Link</TableHead>
           <TableHead className="text-center">Applied</TableHead>
           <TableHead>Edit</TableHead>
           <TableHead>Delete</TableHead>

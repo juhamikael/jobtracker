@@ -7,7 +7,7 @@ const NavbarAuthenticated = () => {
   const pathName = usePathname();
 
   return (
-    <div className="flex gap-x-4">
+    <div className="flex gap-x-4 mx-6">
       <Link
         className={cn(
           "hover:font-bold transition-all",
