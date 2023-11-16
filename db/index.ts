@@ -2,7 +2,7 @@ import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import { jobs, users } from "./schema";
 import { eq } from "drizzle-orm";
-const dbUrl = process.env.DATABASE_URL!;
+export const dbUrl = process.env.DATABASE_URL!;
 
 const client = postgres(dbUrl);
 const db = drizzle(client);
@@ -111,6 +111,14 @@ export const getUser = async ({
   const user = await db.select().from(users).where(eq(users.userId, userId));
   if (user.length > 0) {
     console.log("User exists");
+
+
+    const date = new Date().toISOString();
+
+    await db
+      .update(users)
+      .set({ lastLogin: date })
+      .where(eq(users.userId, userId));
     return user;
   }
 

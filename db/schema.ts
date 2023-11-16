@@ -17,4 +17,5 @@ export const users = pgTable("users", {
   email: varchar("email", { length: 256 }),
   name: varchar("name", { length: 256 }),
   role: varchar("role", { length: 256 }),
+  lastLogin: varchar("last_login"),
 });

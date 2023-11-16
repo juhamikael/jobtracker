@@ -1,0 +1,41 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1700155627068,
+      "tag": "0000_fast_absorbing_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1700155724045,
+      "tag": "0001_left_the_watchers",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1700155755765,
+      "tag": "0002_easy_golden_guardian",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1700156203347,
+      "tag": "0003_petite_shotgun",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1700156527938,
+      "tag": "0004_slippery_zarek",
+      "breakpoints": true
+    }
+  ]
+}
